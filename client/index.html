@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>Cálculo de raíces cuadradas</h1>
-  <form action="#" id="form">
+  <form action="#">
     <div id="error">
 
     </div>
@@ -21,14 +21,14 @@
     </div>
 
     <div>
-      <button>Calcular!</button>
+      <button id="calcular" type="button">Calcular!</button>
     </div>
   </form>
 </body>
 </html>
 
 <script>
-  document.getElementById("form").addEventListener("submit", function () {
+  document.getElementById("calcular").addEventListener("click", function () {
     var numero = document.getElementById("numero").value;
     var request = new XMLHttpRequest();
     request.open("GET", "http://localhost:8079/sqrt/" + numero);
