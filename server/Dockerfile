@@ -4,6 +4,6 @@ WORKDIR /app
 ADD . /app
 RUN bundle install
 
-EXPOSE 80
+EXPOSE 8081
 
-CMD ["/bin/ruby", "main.rb"]
+CMD ["/bin/bash", "startup.sh"]
