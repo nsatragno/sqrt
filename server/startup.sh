@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby main.rb -p 8081
+ruby main.rb -p 8079
