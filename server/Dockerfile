@@ -4,6 +4,6 @@ WORKDIR /app
 ADD . /app
 RUN bundle install
 
-EXPOSE 8081
+EXPOSE 8079
 
 CMD ["/bin/bash", "startup.sh"]
